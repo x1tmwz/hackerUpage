@@ -1,0 +1,20 @@
+.meeting-button {
+    display: none;
+
+    @media (min-width: 60rem) {
+        display: flex;
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        background: #213a7f;
+        padding: 0;
+        margin: 4rem;
+
+        div {
+            padding: 1rem;
+            border: 2px solid #aad6be;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

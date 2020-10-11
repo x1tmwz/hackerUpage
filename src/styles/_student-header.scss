@@ -1,0 +1,62 @@
+.student-header{
+    display: none;
+    color: white;
+    background-color: $dark-blue;
+    @media (min-width: 40rem) {
+        display: block;
+    }
+    @media (min-width: 100rem) {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+}
+.student-header__container{
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   margin: auto;
+}
+.student-header__links{
+    display: flex;
+    margin: auto 3rem;
+}
+.student-header__link{
+    color: white;
+    text-decoration: none;
+    margin: 0 0.2rem;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.student-header__form{
+    display: flex;
+    background: $very-dark-blue;
+
+}
+.student-header__search{
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    color: white;
+    &:focus{
+        outline: none;
+    }
+}
+.student-header__search-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    &:focus{
+        outline: none;
+    }
+
+}
+
+#student-header__link3,
+#student-header__link4{
+    @media (max-width: 70rem) {
+        display: none;
+    }
+}

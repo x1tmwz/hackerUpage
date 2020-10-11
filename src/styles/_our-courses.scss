@@ -1,0 +1,38 @@
+.our-courses {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @media (min-width: 40rem) {
+        text-align: right;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+        padding-bottom: 8rem;
+        h1 {
+            margin: right;
+        }
+    }
+    @media (min-width: 100rem) {
+        
+        width: 60%;
+       
+    }
+}
+.our-courses__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: 40rem) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,20%) 
+    }
+    @media (min-width: 60rem) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,25%) 
+    }
+}
+.our-courses__container{
+    display: flex;
+    justify-content: space-between;
+    
+}

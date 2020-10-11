@@ -1,0 +1,70 @@
+.register-form{
+    display: none;
+    @media (min-width: 60rem) {
+        background: $hacker-u-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        max-width: 30rem;
+        min-width: 10rem;
+        padding: 1rem;
+        h1{
+            color: white;
+            font-weight: 600;
+            align-self: start;
+            font-size: 1.5rem;
+        }
+        p{
+            color: white;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        button{
+            border-color: #00B8D4;
+            background: #18FFFF;
+            font-size: 2.5rem;
+            width: 90%;
+            
+        }
+    }
+    
+
+}
+.register-form__input-gruop{
+   background-color: white;
+   width: 95%;
+   height: 4rem;
+   display: flex;
+   margin: 1rem 0;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 0.2rem;
+   input{
+       border: none;
+       width: 70%;
+       margin: 0;
+       &:focus{
+           outline: none;
+       }
+   } 
+   label{
+       font-weight: 600;
+       width: 35%;
+   }
+}
+.register-form__input-gruop-check{
+    display: flex;
+    width: 100%;
+    
+    input{
+      margin-left: 0.4rem;;
+    } 
+    label{
+        font-weight: 600;
+        font-size:0.8rem;
+        color: white;
+    }
+}

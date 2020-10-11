@@ -1,0 +1,109 @@
+// .hamburger-button {
+//   width: 3rem;
+//   background: transparent;
+//   border: none;
+//   cursor: pointer;
+//   padding-top: 0;
+//   padding-bottom: 0;
+//   vertical-align: middle;
+
+//   &:focus {
+//     outline: none;
+//   }
+//   @media (min-width: 100rem) {
+//     display: none;
+//   }
+// }
+
+// .hamburger-button__bar {
+//   width: 100%;
+//   height: 0.3rem;
+//   background: $dark-blue;
+//   display: block;
+//   border-radius: 20%;
+//   margin: 0.4rem 0;
+// }
+
+// .hamburger-button--close {
+//   @extend .hamburger-button;
+//   #bar-2 {
+//     display: none;
+//   }
+//   #bar-1 {
+//     transform: rotate(135deg);
+//     position: relative;
+//   }
+//   #bar-3 {
+//     top: -11px;
+//     transform: rotate(-135deg);
+//     position: relative;
+//   }
+// }
+
+.hamburger-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+
+  &:focus {
+    outline: none;
+  }
+  @media (min-width: 65rem) {
+    display: none;
+  }
+}
+
+.hamburger-button__bar {
+  width: 100%;
+  height: 0.3rem;
+  background: $dark-blue;
+  display: block;
+  border-radius: 20%;
+  margin: 0.4rem 0;
+}
+
+.hamburger-button--close {
+  @extend .hamburger-button;
+  #bar-2 {
+    position: relative;
+    animation: displayNoneBar 200ms linear  forwards;
+  }
+  #bar-1 {
+    position: relative;
+    animation: rotateBarRight 200ms linear 200ms forwards;
+  }
+
+  #bar-3 {
+    position: relative;
+    animation: rotateBarLeft 200ms linear 200ms forwards;
+  }
+}
+@keyframes rotateBarLeft {
+  0% {
+  }
+  100% {
+    top: -23px;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes rotateBarRight {
+  0% {
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes displayNoneBar {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    left: 30px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,57 @@
+.our-benfits{
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 1rem;
+    @media (min-width: 40rem) {
+      
+       position: relative;
+    }
+    @media (min-width: 60rem) {
+        text-align: right;
+        margin: auto;
+        h1 {
+            width: 50%;
+            margin: 1rem auto;
+        }
+    }
+}
+.our-benfits__list{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 60rem) {
+       width: 50%;
+       margin: auto;
+       display: grid;
+       grid-template-columns: 50% 50%;
+       .benfit-card{
+           opacity: 0;
+       }
+    }
+}
+.benfit-card--animation{
+    @media (min-width: 60rem) {
+        animation: fade-in 500ms linear forwards;
+    
+       
+    }
+    
+
+}
+
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}

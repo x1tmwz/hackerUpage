@@ -1,0 +1,31 @@
+.benfit-card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    @media (min-width: 60rem) {
+        flex-direction: row;
+        
+        
+       
+    }
+    
+
+}
+.benfit-card__image{
+    width: 15%;
+    @media (min-width: 60rem) {
+        margin: 0 2rem;
+        vertical-align: top;
+        width: 20%;
+       
+    }
+
+}
+
+// .benfit-card__info{
+
+
+// }
+// .benfit-card__link{
+
+// }

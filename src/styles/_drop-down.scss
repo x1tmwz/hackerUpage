@@ -1,0 +1,57 @@
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 65rem) {
+       position: relative;
+        z-index: 1;
+   
+    }
+    button{
+        span{
+            font-size: 0.6rem;
+            margin-right: 0.2rem;
+            vertical-align: middle;
+        }
+    }
+}
+.dropdown-content{
+    display: none;
+    z-index: 1;
+    @media (min-width: 65rem) {
+        visibility: hidden;
+    }
+    &:hover{
+        visibility: visible;
+    }
+}
+
+.open-dropdown{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 65rem) {
+        position: absolute;
+        top:2rem;
+        background-color: $dark-blue;
+        grid-template-columns: 12rem 12rem 12rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+
+    }
+}
+#dropdown0{
+    .open-dropdown{
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 65rem) {
+            display: grid;
+            position: absolute;
+            top:2rem;
+            background-color: $dark-blue;
+            grid-template-columns: 12rem 12rem 12rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+            z-index: 1;
+    
+        }
+    }
+}

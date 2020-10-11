@@ -1,0 +1,166 @@
+{
+    "header":{
+        "links":{
+            "courses":{
+                "cyber":"",
+                "qa":"",
+                "fullStack":"",
+                "ux":""
+            },
+            "aboutUs":{
+                "hackerUInfo":"",
+                "commonQustions":"",
+                "required":""
+
+            },
+            "whyUs":{
+                "howItWork":"",
+                "centerPosition":""
+
+            }
+            ,
+            "assigning":{},
+            "map":{},
+            "stories":{}
+        }
+    },
+    "ourCourses":{
+        "cyber":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.35.16-cyber.svg",
+            "speratorColor":"#0598A8",
+            "link":"https://www.hackeru.co.il/course/network-management"
+        },
+        "networkManagementCourse":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.34.59-network-management.svg",
+            "speratorColor":"#77C044",
+            "link":"https://www.hackeru.co.il/course/network-management"
+        },
+        "qa":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.32.31-qa.svg",
+            "speratorColor":"#5E6BB2",
+            "link":"https://www.hackeru.co.il/course/graphic-design"
+        },
+        "fullStack":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.35.50-web-dev.svg",
+            "speratorColor":"#8352A1",
+            "link":"https://www.hackeru.co.il/course/applications"
+        },
+        "ux":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.34.31-graphic-design.svg",
+            "speratorColor":"#ED1859",
+            "link":"https://www.hackeru.co.il/course/web-developer"
+        },
+        "digitalMarketingCourse":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.41.07-marketing.svg",
+            "speratorColor":"#EF4523",
+            "link":"https://www.hackeru.co.il/course/marketing"
+        },
+        "aplicationDevelopmentCourse":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.38.36-apps.svg",
+            "speratorColor":"#1E5F30",
+            "link":"https://www.hackeru.co.il/course/applications"
+        },
+        "linuxServerManagementCourse":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.33.47-linux.svg",
+            "speratorColor":"#154B9C",
+            "link":"https://www.hackeru.co.il/course/linux"
+        },
+        "animationCourse":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.36.06-animation.svg",
+            "speratorColor":"#F36E44",
+            "link":"https://www.hackeru.co.il/course/animation"
+        },
+        "gameDevelopmentCourse":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.37.06-gaming.svg",
+            "speratorColor":"#D72816",
+            "link":"https://www.hackeru.co.il/course/gaming"
+        },
+        "courseDBAMaster":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.37.24-dba.svg",
+            "speratorColor":"#25B9A2",
+            "link":"https://www.hackeru.co.il/course/dba"
+        },
+        "courseDotNet":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.33.06-net.svg",
+            "speratorColor":"#39A4DC",
+            "link":"https://www.hackeru.co.il/course/dot-net"
+        },
+        "qaAutomationDevelopersCourse":{
+            "img":"https://www.hackeru.co.il/assets/site/images/19.12.15.15.36.41-automation.svg",
+            "speratorColor":"#352F8A",
+            "link":"https://www.hackeru.co.il/course/qa-automation"
+        }
+    },
+    "cards":{
+        "hackerUForBussnise":{
+            "img":"https://www.hackeru.co.il/assets/site/images/buildings.svg",
+            "link":"http://hackerupro.com/"
+        },
+        "globalHackerU":{
+            "img":"https://www.hackeru.co.il/assets/site/images/global.svg",
+            "link":"http://hackeru.com/"
+        }
+
+    },
+    "ourBenfits":{
+        "benfits":{
+            "uniqueSortingMethod":{
+                "img":"https://www.hackeru.co.il/assets/site/images/advs_1.svg",
+                "link":"https://www.hackeru.co.il/proccess"
+
+            },
+            "learnFromHomeProfession":{
+                "img":"https://www.hackeru.co.il/assets/site/images/advs_6.svg",
+                "link":""
+            },
+            "facultyOfLecturersConductor":{
+                "img":"https://www.hackeru.co.il/assets/site/images/advs_3.svg",
+                "link":"https://www.hackeru.co.il/faculty"
+            },
+            "scholarshipContractualWorkCommitment": {
+                "img":"https://www.hackeru.co.il/assets/site/images/advs_4.svg",
+                "link":"https://www.hackeru.co.il/testimony-employers"
+            },
+            "comprehensiveCurriculum": {
+                "img":"https://www.hackeru.co.il/assets/site/images/advs_5.svg",
+                "link":"https://www.hackeru.co.il/curriculum"
+            },
+            "centralLocation": {
+                "img":"https://www.hackeru.co.il/assets/site/images/advs_2.svg",
+                "link":"https://www.hackeru.co.il/central-location"
+            },
+            "globalDeployment": {
+                "img":"https://www.hackeru.co.il/assets/site/images/advs_7.svg"
+               
+            }
+        }
+    },
+    "ourProcess":{
+        "img":"https://www.hackeru.co.il/assets/site/images/level_vector.png",
+        "colors":{
+            "step1":{
+                "backgroundColor":"rgb(5, 152, 168)"
+                
+            },
+            "step2":{
+                "backgroundColor":"rgb(57, 164, 220)"
+                
+            },
+            "step3":{
+                "backgroundColor":"rgb(21, 75, 156)"
+                
+            },
+            "step4":{
+                "backgroundColor":"rgb(53, 47, 138)"
+            }
+                
+
+        }
+        
+    },
+    "modal":{
+        "computerImage":"https://static.adoric.com/1585557234472_abk87l6v2kf/laptop.png",
+        "exitButtonUnicode":"✖",
+        "markerPenBoxImage":"https://adoric-images.s3.amazonaws.com/1509719753007_d6tj2u6w57pkxw63ltsz1714i.png"
+    }
+}
