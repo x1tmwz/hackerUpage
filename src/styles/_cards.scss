@@ -20,12 +20,19 @@
         margin-bottom: 0;
         padding: 1rem 1rem;
         background-color: rgba(grey,0.1);
+        font-size: 0.8rem;
+        @media (min-width: 40rem) {
+           
+            font-size: 1rem;
+           
+        }
     }
     .benfit-card__image{
         width: 20%;
-        margin-left: 0.5rem;
+        
         @media (min-width: 40rem) {
             width: 15%;
+            margin-left: 0.5rem;
             
            
         }

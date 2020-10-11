@@ -1,25 +1,28 @@
 .modal {
-    display: none;
-    @media (min-width: 40rem) and (min-height: 40rem) {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.4);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-        font-family: AlmoniDLAAA-Bold, Rubik, sans-serif;
-    }
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    font-family: AlmoniDLAAA-Bold, Rubik, sans-serif;
+   
+  
 }
 .modal--close {
     display: none;
 }
 .modal__container {
     background-color: #ffffff;
-    width: 600px;
-    height: 600px;
-    padding: 2rem;
+    width: 230px;
+    height: 230px;
+    padding: 1rem;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -28,20 +31,24 @@
     position: relative;
     z-index: 100;
     animation: fadeInModal 400ms;
+    font-size: 0.8rem;
     button {
         border: none;
         background-color: transparent;
-        font-size: 2rem;
+        font-size: 1rem;
+        margin-bottom: 0;
     }
 
     .modal__container__box-marker-pen-image {
         position: absolute;
-        top: 0;
-        left: 30%;
-        width: 500px;
+        top: -50px;
+        left: -110px;
+        width: 400px;
         height: 200px;
         overflow: hidden;
         z-index: -20;
+        transform: scale(0.5);
+      
 
         img {
             position: absolute;
@@ -49,32 +56,86 @@
             height: 635px;
             top: 0;
             left: 0;
+            
         }
     }
     .modal__container__computer-image {
         position: absolute;
-        transform: scale(-1, 1);
-        transform: rotate(233.434deg);
-        top: 25%;
-        left: -110px;
+        top: -9%;
+        transform: rotate(-150deg) scale(-0.3,0.3);
+
+
+       
     }
+
+    @media (min-width: 40rem) and (min-height: 40rem) {
+        background-color: #ffffff;
+        width: 600px;
+        height: 600px;
+        padding: 2rem;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        z-index: 100;
+        animation: fadeInModal 400ms;
+        button {
+            border: none;
+            background-color: transparent;
+            font-size: 2rem;
+        }
+    
+        .modal__container__box-marker-pen-image {
+            position: absolute;
+            top: 0;
+            left: 30%;
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+            z-index: -20;
+            transform: scale(1);
+    
+            img {
+                position: absolute;
+                width: 401px;
+                height: 635px;
+                top: 0;
+                left: 0;
+            }
+        }
+        .modal__container__computer-image {
+            position: absolute;
+            transform: scale(-1, 1);
+            transform: rotate(233.434deg);
+            top: 25%;
+            left: -110px;
+        }
+       
+    }
+  
 }
 .modal__container__form {
-    padding: 2rem;
+    padding: 0.5rem;
     color: $dark-blue-royal;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     z-index: 200;
+   
     h2 {
         color: $purpule;
-        margin: 1rem;
+        margin: 0.1rem;
+        font-size: 0.8rem;
+        
     }
     h1 {
         width: 70%;
         text-align: center;
-        margin: 0.3rem auto;
+        margin: 0.1rem auto;
+        font-size: 0.8rem;
     }
     ::placeholder {
         color: $dark-blue-royal;
@@ -82,10 +143,10 @@
 
     input[type="text"] {
         color: $dark-blue-royal;
-        height: 2rem;
+        height: 0.1rem;
         width: 60%;
-        margin-bottom: 1rem;
-        font-size: 1rem;
+        margin-bottom: 0.1rem;
+        font-size: 0.1rem;
         box-shadow: rgb(33, 59, 127) 0px 0px 4px -1px;
         background-color: rgb(255, 255, 255);
         border: 0px solid rgb(53, 47, 138);
@@ -99,17 +160,80 @@
         border: none;
         background-color: $dark-blue-royal;
         width: 40%;
-        padding: 1rem;
-        font-size: 1.2rem;
+        padding: 0.4rem;
+        font-size: 0.4rem;
     }
+
+    @media (min-width: 40rem) and (min-height: 40rem) {
+        padding: 2rem;
+        color: $dark-blue-royal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 200;
+       
+        h2 {
+            color: $purpule;
+            margin: 1rem;
+            font-size: 1.2rem;
+         
+        }
+        h1 {
+            width: 70%;
+            text-align: center;
+            margin: 0.3rem auto;
+            font-size: 2rem;
+        }
+        ::placeholder {
+            color: $dark-blue-royal;
+        }
+    
+        input[type="text"] {
+            color: $dark-blue-royal;
+            height: 2rem;
+            width: 60%;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            box-shadow: rgb(33, 59, 127) 0px 0px 4px -1px;
+            background-color: rgb(255, 255, 255);
+            border: 0px solid rgb(53, 47, 138);
+            border-radius: 2px;
+            text-align: right;
+            font-weight: 700;
+            padding: 0.5rem;
+        }
+        button {
+            color: white;
+            border: none;
+            background-color: $dark-blue-royal;
+            width: 40%;
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
+
+    }
+   
 }
 .modal__container__form__check-box-container {
     display: flex;
     flex-direction: row;
-    font-size: 0.8rem;
+    font-size: 0.4rem;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    input{
+        width: 10%;
+        height: 30%;
+    }
+    @media (min-width: 40rem) and (min-height: 40rem) {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8rem;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
 }
 
 @keyframes fadeInModal {
@@ -122,3 +246,130 @@
         transform: translateY(0);
     }
 }
+
+
+//style before chanege to responsive modal "
+// .modal {
+//     display: none;
+//     @media (min-width: 40rem) and (min-height: 40rem) {
+//         position: fixed;
+//         width: 100%;
+//         height: 100vh;
+//         background-color: rgba(0, 0, 0, 0.4);
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         z-index: 1000;
+//         font-family: AlmoniDLAAA-Bold, Rubik, sans-serif;
+//     }
+// }
+// .modal--close {
+//     display: none;
+// }
+// .modal__container {
+//     background-color: #ffffff;
+//     width: 600px;
+//     height: 600px;
+//     padding: 2rem;
+//     border-radius: 50%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     overflow: hidden;
+//     position: relative;
+//     z-index: 100;
+//     animation: fadeInModal 400ms;
+//     button {
+//         border: none;
+//         background-color: transparent;
+//         font-size: 2rem;
+//     }
+
+//     .modal__container__box-marker-pen-image {
+//         position: absolute;
+//         top: 0;
+//         left: 30%;
+//         width: 500px;
+//         height: 200px;
+//         overflow: hidden;
+//         z-index: -20;
+
+//         img {
+//             position: absolute;
+//             width: 401px;
+//             height: 635px;
+//             top: 0;
+//             left: 0;
+//         }
+//     }
+//     .modal__container__computer-image {
+//         position: absolute;
+//         transform: scale(-1, 1);
+//         transform: rotate(233.434deg);
+//         top: 25%;
+//         left: -110px;
+//     }
+// }
+// .modal__container__form {
+//     padding: 2rem;
+//     color: $dark-blue-royal;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     position: relative;
+//     z-index: 200;
+//     h2 {
+//         color: $purpule;
+//         margin: 1rem;
+//     }
+//     h1 {
+//         width: 70%;
+//         text-align: center;
+//         margin: 0.3rem auto;
+//     }
+//     ::placeholder {
+//         color: $dark-blue-royal;
+//     }
+
+//     input[type="text"] {
+//         color: $dark-blue-royal;
+//         height: 2rem;
+//         width: 60%;
+//         margin-bottom: 1rem;
+//         font-size: 1rem;
+//         box-shadow: rgb(33, 59, 127) 0px 0px 4px -1px;
+//         background-color: rgb(255, 255, 255);
+//         border: 0px solid rgb(53, 47, 138);
+//         border-radius: 2px;
+//         text-align: right;
+//         font-weight: 700;
+//         padding: 0.5rem;
+//     }
+//     button {
+//         color: white;
+//         border: none;
+//         background-color: $dark-blue-royal;
+//         width: 40%;
+//         padding: 1rem;
+//         font-size: 1.2rem;
+//     }
+// }
+// .modal__container__form__check-box-container {
+//     display: flex;
+//     flex-direction: row;
+//     font-size: 0.8rem;
+//     justify-content: center;
+//     align-items: center;
+//     font-weight: bold;
+// }
+
+// @keyframes fadeInModal {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(-400px);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
